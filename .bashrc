@@ -6,7 +6,9 @@
 [[ $- != *i* ]] && return
 
 # Source the alias file
-source ~/.bash_aliases
+if [ -f "${HOME}/.bash_aliases" ] ; then
+  source ~/.bash_aliases
+fi
 
 # Change some environment 
 PATH="${PATH}:/home/g0/.cabal/bin:/sbin/:/home/g0/.wine/drive_c/MinGW/bin:/usr/local/bin:/usr/share"
