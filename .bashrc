@@ -11,9 +11,9 @@ if [ -f "${HOME}/.bash_aliases" ] ; then
 fi
 
 # Change some environment 
-PATH="${PATH}:/home/g0/.cabal/bin:/sbin/:/home/g0/.wine/drive_c/MinGW/bin:/usr/local/bin:/usr/share"
+PATH="${PATH}:/sbin/:/usr/local/bin:/usr/share"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
-export PYTHONSTARTUP=/home/g0/.pythonrc
+export PYTHONSTARTUP=${HOME}/.pythonrc
 export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
 export EDITOR=vim
 export TERM=xterm-256color
